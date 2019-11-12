@@ -18,6 +18,8 @@ html, body {
     margin: 0;
     border-right: 1px solid gray;
     letter-spacing: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .selectable {
@@ -32,8 +34,6 @@ html, body {
     justify-content: space-evenly;
     align-content: center;
     background-color: rgb(255, 255, 255);
-    transition: 0.1s;
-    padding-right: 40px;
 }
 
 .dimension {
@@ -52,8 +52,7 @@ html, body {
 
 /* Input Boxes */
 #nav-input {
-    height: 60%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #input-box1, #input-box2 {
