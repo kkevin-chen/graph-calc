@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type='text/css' rel='stylesheet' href='style.css'>
+  <title>Basic Graphing Calculator</title>
+</head>
+
+<body>
+
+  <!-- Side Navigation -->
+  <div id='mySideNav' class='sideNav'>
+    <!-- Will display on key press -->
+    <div id='key-warning'>Editing with keys is forbidden.<br>Use button interface instead.</div>
+    <button type='button' id='openclose'><<</button>
+    <!-- Input Functions -->
+    <div id='set-dimensions'>
+      <p id='xmin'>x-min: <br><br><span class='dimension selectable' id='xMin-input'>-15</span></p>
+      <p id='xmax'>x-max: <br><br><span class='dimension selectable' id='xMax-input'>15</span></p>
+      <p id='ymin'>y-min: <br><br><span class='dimension selectable' id='yMin-input'>-10</span></p>
+      <p id='ymax'>y-max: <br><br><span class='dimension selectable' id='yMax-input'>10</span></p>
+      <button type='button' id='button-dim'>Set</button>
+    </div>
+    <div id='nav-input'>
+      <div id='input-box1'>
+        <p class='outerequ'>y = <span id='equ1' class='selectable equ'></span></p>
+        <button type='button' id='enter1'>Graph</button>
+        <hr>
+        <p>Trace: Enter x to find y.</p>
+        <div>
+          <div class='out-tracex'>
+            <p>x = </p><span id='tracex1' class='selectable tracer'></span>
+            <button type='button' id='tracer-button1'>Trace</button>
+          </div>
+          <p class='tracey-out'>y = <span id='tracey1'>---</span></p>
+        </div>
+      </div>
+
+      <div id='input-box2'>
+        <p class='outerequ'>y = <span id='equ2' class='selectable equ'></span></p>
+        <button type='button' id='enter2'>Graph</button>
+        <hr>
+        <p>Trace: Enter x to find y.</p>
+        <div>
+          <div class='out-tracex'>
+            <p>x = </p><span id='tracex2' class='selectable tracer'></span>
+            <button type='button' id='tracer-button2'>Trace</button>
+          </div>
+          <p class='tracey-out'>y = <span id='tracey2'>---</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Buttons -->
+    <div id='nav-buttons' style="width:100%">
+      <div class='grid-element1'>
+        <button type="button" class='double' id='Math.sin('>sin(</button>
+        <button type="button" class='operation' id=' / '>/</button>
+        <button type="button" class='double' id='Math.cos('>cos(</button>
+        <button type="button" class='operation' id=' * '>*</button>
+        <button type="button" class='double' id='Math.tan('>tan(</button>
+        <button type="button" class='operation' id=' - '>-</button>
+        <button type="button" class='double' id='Math.log('>ln(</button>
+        <button type="button" class='operation' id=' + '>+</button>
+        <button type="button" class='double' id='x'>x</button>
+        <button type="button" class='operation' id=' **('>^(</button>
+      </div>
+      <div class='grid-element2'>
+        <button type="button" class='numbers' id='( '>(</button>
+        <button type="button" class='numbers' id=' )'>)</button>
+        <button type="button" class='back pure' id='back'>⌫</button>
+        <button type="button" class='numbers pure' id='7'>7</button>
+        <button type="button" class='numbers pure' id='8'>8</button>
+        <button type="button" class='numbers pure' id='9'>9</button>
+        <button type="button" class='numbers pure' id='4'>4</button>
+        <button type="button" class='numbers pure' id='5'>5</button>
+        <button type="button" class='numbers pure' id='6'>6</button>
+        <button type="button" class='numbers pure' id='1'>1</button>
+        <button type="button" class='numbers pure' id='2'>2</button>
+        <button type="button" class='numbers pure' id='3'>3</button>
+        <button type="button" class='numbers pure' id='0'>0</button>
+        <button type="button" class='numbers pure' id='.'>.</button>
+        <button type="button" class='numbers pure' id='Math.PI'>π</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Canvas -->
+  <div id='main'>
+    <canvas id='coords'></canvas>
+  </div>
+
+
+
+  <!-- JavaScript -->
+  <script src='main.js'></script>
+</body>
+
+</html>
