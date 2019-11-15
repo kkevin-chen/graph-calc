@@ -3,6 +3,7 @@
 // Intro
 
 // Informing user of no key press
+alert('For the demonstration, I have included my Computer Science 10 final project. It\'s not perfect, and there are some issues with spacing, especially with different browsers. However, it should work. You can view the code by right-clicking and choosing "inspect" or "inspect element". It\'s one of my proudest academic accomplishments, so hopefully, these issues detract little from the time I spent with it. It is completely original.');
 alert('Editing from keyboard is not allowed. Use button interface instead.');
 
 // Will display popup if user presses a key
